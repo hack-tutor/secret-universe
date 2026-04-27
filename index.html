@@ -799,29 +799,113 @@
     </div>
 
     <script>
-        const MEMORIES = [
-            { src: "assets/selfie-1.jpg", caption: "us 🥰", story: "Just us, just a camera, just a moment that became my favourite thing. You never have to try to look perfect. You just are." },
-            { src: "assets/selfie-2.jpg", caption: "take two ✨", story: "Every angle is the angle. I looked at this and knew — this is the person I want to make memories with forever." },
-            { src: "assets/selfie-3.jpg", caption: "still going 😊", story: "You make me look twice. A hundred times. You make ordinary seconds feel like something worth saving." },
-            { src: "assets/selfie-4.jpg", caption: "one more 📸", story: "'Just one more', I always say. Because how do you stop when the subject is you?" },
-            { src: "assets/together-1.jpg", caption: "Baju & Bensoo 💕", story: "Two names that sound perfect together. You make even my name feel like it belongs to a beautiful story." },
-            { src: "assets/together-2.jpg", caption: "together again 🌹", story: "Proof that we exist. Proof that this is real. You are the luckiest thing that ever happened to me." },
-            { src: "assets/jaipur-1.jpg", caption: "Jaipur 🏰", story: "Time stood still in Jaipur. Just us in a new city. This selfie is the warmth of those days captured." },
-            { src: "assets/jaipur-2.jpg", caption: "Jaipur together 💑", story: "I don't remember the monument, I remember YOU. The way you looked next to me. The way the trip felt magic because you were in it." },
-            { src: "assets/jaipur-3.jpg", caption: "Jaipur memories 🌸", story: "One of the best chapters I've lived. I hope we fill many more cities with memories like these." },
-            { src: "assets/jaipur-city.jpg", caption: "the Pink City 🌆", story: "A city as rosy as my life has been since meeting you. Let's go everywhere together." },
-            { src: "assets/jaipur-moments.jpg", caption: "Jaipur moments ❤️", story: "A quiet little frame that reminds me what real happy feels like. You did that." },
-            { src: "assets/lift-selfie.jpg", caption: "lift selfie lol 😂", story: "Ordinary places become extraordinary because you're there. Even a 5-second elevator ride." },
-            { src: "assets/date-jaipur.jpg", caption: "date night ✨", story: "Time slowed down for us. The city went quiet. Magic nights with magic people." },
-            { src: "assets/first-date.jpg", caption: "first real date 🥂", story: "The night I realised we were really doing this. You made everything feel so easy and right." },
-            { src: "assets/first-meal.jpg", caption: "first meal 🍽️", story: "I don't remember the order. I remember the laughter and the way 'yes' felt across the table." },
-            { src: "assets/first-movie.jpg", caption: "first movie 🎬", story: "I missed the whole plot. You were the only movie I needed to watch." },
-            { src: "assets/valentines-1.jpg", caption: "Valentine's Day 💝", story: "A day meant for love finally felt real because I had you to share it with." },
-            { src: "assets/valentines-2.jpg", caption: "my valentine 🌹", story: "You are MY valentine. Not a daydream. Mine." },
-            { src: "assets/flowers-1.jpg", caption: "flowers 💐", story: "Every petal is a reminder that you make my days brighter." },
-            { src: "assets/flowers-2.jpg", caption: "she deserves them all 🌷", story: "Not for a special occasion. Just because you are you, and that's extraordinary." },
-            { src: "assets/photography.jpg", caption: "the photographer 😎", story: "You're endlessly worth photographing. You make me a better artist just by existing." }
-        ];
+      const MEMORIES = [
+    {
+        src: "assets/selfie.jpg",
+        caption: "selfie 🥰",
+        story: "Just us, just a camera, just a moment that became my favourite thing. You never have to try to look perfect. You just are."
+    },
+    {
+        src: "assets/selfie (2).jpg",
+        caption: "take two ✨",
+        story: "Every angle is the angle. I looked at this and knew — this is the person I want to make memories with forever."
+    },
+    {
+        src: "assets/selfie (3).jpg",
+        caption: "still going 😊",
+        story: "You make me look twice. A hundred times. You make ordinary seconds feel like something worth saving."
+    },
+    {
+        src: "assets/another selfie.jpg",
+        caption: "one more 📸",
+        story: "'Just one more', I always say. Because how do you stop when the subject is you?"
+    },
+    {
+        src: "assets/baju and bensoo together.jpg",
+        caption: "Baju & Bensoo 💕",
+        story: "Two names that sound perfect together. You make even my name feel like it belongs to a beautiful story."
+    },
+    {
+        src: "assets/another baju and benson together.jpg",
+        caption: "together again 🌹",
+        story: "Proof that we exist. Proof that this is real. You are the luckiest thing that ever happened to me."
+    },
+    {
+        src: "assets/jaipur selfie.jpg",
+        caption: "Jaipur 🏰",
+        story: "Time stood still in Jaipur. Just us in a new city. This selfie is the warmth of those days captured."
+    },
+    {
+        src: "assets/jaipur photo.jpg",
+        caption: "Jaipur together 💑",
+        story: "I don't remember the monument, I remember YOU. The way you looked next to me. The way the trip felt magic because you were in it."
+    },
+    {
+        src: "assets/jaipur selfie together.jpg",
+        caption: "Jaipur memories 🌸",
+        story: "One of the best chapters I've lived. I hope we fill many more cities with memories like these."
+    },
+    {
+        src: "assets/jaipur.jpg",
+        caption: "the Pink City 🌆",
+        story: "A city as rosy as my life has been since meeting you. Let's go everywhere together."
+    },
+    {
+        src: "assets/lift selfie jaipur.jpg",
+        caption: "lift selfie lol 😂",
+        story: "Ordinary places become extraordinary because you're there. Even a 5-second elevator ride."
+    },
+    {
+        src: "assets/date night jaipur.jpg",
+        caption: "date night ✨",
+        story: "Time slowed down for us. The city went quiet. Magic nights with magic people."
+    },
+    {
+        src: "assets/first proper date night. had lots of fun.jpg",
+        caption: "first real date 🥂",
+        story: "The night I realised we were really doing this. You made everything feel so easy and right."
+    },
+    {
+        src: "assets/first meal in jaipur together.jpg",
+        caption: "first meal 🍽️",
+        story: "I don't remember the order. I remember the laughter and the way 'yes' felt across the table."
+    },
+    {
+        src: "assets/first movie together.jpg",
+        caption: "first movie 🎬",
+        story: "I missed the whole plot. You were the only movie I needed to watch."
+    },
+    {
+        src: "assets/valentines day.jpg",
+        caption: "Valentine's Day 💝",
+        story: "A day meant for love finally felt real because I had you to share it with."
+    },
+    {
+        src: "assets/valentines.jpg",
+        caption: "my valentine 🌹",
+        story: "You are MY valentine. Not a daydream. Mine."
+    },
+    {
+        src: "assets/flowers for baju.jpg",
+        caption: "flowers 💐",
+        story: "Every petal is a reminder that you make my days brighter."
+    },
+    {
+        src: "assets/flowers for baju from benson.jpg",
+        caption: "she deserves them all 🌷",
+        story: "Not for a special occasion. Just because you are you, and that's extraordinary."
+    },
+    {
+        src: "assets/bensoos photography skills.jpg",
+        caption: "the photographer 😎",
+        story: "You're endlessly worth photographing. You make me a better artist just by existing."
+    },
+    {
+        src: "assets/where it all started..jpg",
+        caption: "where it all started ❤️",
+        story: "Some places stay sacred forever. This is where a whole beautiful chapter began."
+    }
+];
 
         let currentMemIndex = 0;
         let isMusicPlaying = false;
